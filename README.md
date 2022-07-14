@@ -15,6 +15,8 @@ Vai ser muito importante para o seu aprendizado rever e aplicar esses novos conc
 • Construção e estilização de tabelas.
 #### 🚀 Screen Reader Only
 • "sr-only" class que ajuda a retirar o elemento da tela mantendo a acessibilidade
+#### 🚀 POO
+• A base lógica inteira desse projeto foi orientada a objeto/classes/métodos
 #### 🚀 Imutabilidade
 • Conceitos de imutabilidade
 #### 🚀 Higher-order functions()
