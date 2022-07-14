@@ -9,6 +9,6 @@ Aqui está o <a href="https://www.figma.com/file/l83jCmkorHizqOlqt8rvZT/Desafios
 E aí, topa encarar esse desafio? 💜
 Vai ser muito importante para o seu aprendizado rever e aplicar esses novos conceitos.
 
-<h2 align="center"><a href="https://carloseduardob94.github.io/GitFav/">Deploy 🌍</a></h2>
+<h2 align="center"><a href="https://carloseduardob94.github.io/GitFav/" target="_blank">Deploy 🌍</a></h2>
 
 <h2 align="center"> Projeto Final ✨</h2>
