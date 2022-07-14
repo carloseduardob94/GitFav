@@ -1,0 +1,298 @@
+*{
+  margin: 0px;
+  padding: 0px;
+
+  box-sizing: border-box;
+}
+
+:root{
+  --bg-primary: #633BBC;
+
+  --bg-app: #000000;
+
+  --thead-color: #092D38;
+
+  --row-even: #4A808C;
+  --row-odd: hsla(195, 61%, 6%, 0.5);
+
+  font-size: 62.5%;
+}
+
+body{
+   background: var(--bg-primary);
+   font-size: 1.6rem;
+}
+
+header div{
+  margin-top: 16rem;
+  margin-left: 24rem;
+  margin-bottom: 12rem;
+}
+
+header h1{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16rem;
+  line-height: 18rem;
+  color: #fff;
+
+  margin-bottom: 1.6rem;
+}
+
+header h2{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8rem;
+  line-height: 9.4rem;
+
+  color: #fff;
+}
+
+#app{
+  background: var(--bg-app);
+
+  max-width: 144rem;
+  max-height: 105.4rem;
+
+  margin: auto;
+  padding: 11.5rem 16rem;
+}
+
+#header-main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 8.7rem;
+
+}
+
+#header-main svg{
+  width: 18.6rem;
+  height: 3.25rem;
+}
+
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+aside{
+  display: flex;
+  gap: .8rem;
+
+  align-items: center;
+}
+
+#github-user{
+  width: 46.2rem;
+  height: 4.5rem;
+
+  padding: 1.6rem;
+
+  background: #06181C;
+  border: none;
+  border-radius: 5px;
+  
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 100%;
+}
+
+#github-user::placeholder{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 100%;
+}
+
+#search-button {
+  display: flex;
+  align-items: center;
+  
+
+  width: 17rem;
+  height: 4.8rem;
+  gap: .8rem;
+
+  padding: 1.2rem 3.2rem;
+  background: #065E7C;
+
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #fff;
+
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#search-button:hover{
+  background: #fff;
+  color: #065E7C;
+  
+}
+
+#search-button:hover svg path{
+  fill: #065E7C;
+
+}
+
+#search-button svg{
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+/*------------TABLE STYLE ----------*/
+
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table *{
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  line-height: 160%;
+  color: #fff;
+  font-weight: 700;
+
+}
+
+thead{
+  background: var(--thead-color);
+  width: 112rem;
+  height: 6.4rem;
+}
+
+
+table th{
+  text-align: left;
+  padding-left:  4rem;
+}
+
+tbody td{
+  height: 10.4rem;
+}
+
+tbody .user{
+  display: flex;
+  padding: 2.4rem 0 2.4rem 4rem;
+  gap: 1.6rem;
+}
+
+tbody .user img{
+  width: 5.6rem;
+  height: 5.6rem;
+
+  border-radius: 50%;
+}
+
+tbody .user a{
+  text-decoration: none;
+  color: #fff;
+}
+
+tbody .user span{
+  font-weight: 400;
+}
+
+tbody .repositories{
+  padding-left: 4rem;
+}
+
+tbody .followers{
+  padding-left: 4rem;
+}
+
+td.action{
+  padding-left: 40px;
+}
+
+tbody .action .remove{
+  background: none;
+  color: #F75A68;
+
+  align-items: left;
+  border: none;
+
+  cursor: pointer;
+}
+
+table tr:nth-child(odd){
+  background: var(--row-odd);
+}
+
+table tr:nth-child(even){
+  background: var(--row-even);
+}
+
+/*----- TABLE EMPTY -----*/
+
+.active svg{
+  width: 132px;
+  height: 125px;
+}
+
+.active  p{
+  color: #4E5455;
+
+  font-family: 'Roboto Mono', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 2.5rem;
+}
+
+.table-wrapper {
+  border-radius: 12px;
+  border: 1px solid #4A808C;
+  overflow: hidden;
+
+  background: var(--row-odd);
+  height: 624px;
+
+  box-shadow: var(--bg-primary) -1px 1px 1.4rem .4rem;
+  
+}
+
+.table-wrapper.active{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+
+  height: 624px;
+  border: none;
+
+  box-shadow: none;
+}
+
+.table-wrapper.no-view{
+  display: none;
+}
+
+
+/* -------- SCROLL ----------- */
+
+::-webkit-scrollbar{
+  width: 8px;
+}
